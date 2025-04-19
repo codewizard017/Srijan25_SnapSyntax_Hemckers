@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <style>
+    body {
+      margin: 0;
+      background: #1a001a;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .about-heading {
+      font-size: 64px;
+      margin-top: 40px;
+      margin-left: 30%;
+      position: relative;
+      white-space: pre-line;
+    }
+
+    .about-heading::after {
+      content: "→";
+      font-size: 36px;
+      position: absolute;
+      left: 100%;
+      top: 10px;
+      margin-left: 30px;
+      color: #cc66ff;
+    }
+
+    .about-box {
+      width: 60%;
+      background-color: #2b0033;
+      padding: 20px 30px;
+      border-radius: 12px;
+      margin-top: 50px;
+      margin-left: calc(30% + 50px);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .contact-button {
+      display: block;
+      margin: 50px auto 0;
+      background-color: #800080;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .laptop-img {
+      position: absolute;
+      top: 200px;
+      left: 100px;
+      width: 200px;
+    }
+
+    @media (max-width: 768px) {
+      .about-heading {
+        font-size: 40px;
+        margin-left: 10%;
+      }
+
+      .about-box {
+        width: 80%;
+        margin-left: 10%;
+      }
+
+      .laptop-img {
+        position: static;
+        display: block;
+        margin: 40px auto 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="about-heading">About<br>Me</h1>
+
+  <div class="about-box">
+    Hi, I'm John Doe —  I am enthusiastic about web developing and wish to pursue my knowledge and expertise towards this field onto my career going forward.
+  </div>
+
+  <button class="contact-button" >Contact Me</button>
+
+  <img src="https://img.freepik.com/premium-vector/pixel-art-laptop-computer-isolated-white_360488-130.jpg" alt="Laptop" class="laptop-img"/>
+
+</body>
+</html>

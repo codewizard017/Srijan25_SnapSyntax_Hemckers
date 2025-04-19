@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me - John Doe</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1a001a;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 64px;
+      text-align: center;
+    }
+
+    .contact-form {
+      margin-top: 50px;
+      margin-left: 500px;
+      max-width: 600px;
+      font-size: 16px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      font-size: 16px;
+      background-color: #2b0033;
+      color: white;
+    }
+
+    .contact-form textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .footer {
+      margin-top: 200px;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Me</h1>
+
+  <div class="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name here"/>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email"/>
+
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="Enter your message"></textarea>
+  </div>
+
+  <div class="footer">
+    &copy; All rights reserved
+  </div>
+
+</body>
+</html>

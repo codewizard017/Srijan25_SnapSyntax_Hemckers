@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills - John Doe</title>
+  <style>
+    body {
+      margin: 0;
+      background: #1a001a;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .skills-title {
+      font-size: 80px;
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 200px;
+        row-gap: 30px;
+        margin: 50px 0 200px 100px;
+        font-size: 18px;
+    }
+        
+    .skill {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .skill-row {
+      display: flex;
+      flex-direction: row;
+      gap: 200px;
+    }
+
+    
+
+    .stars {
+      color: gold;
+      font-size: 18px;
+    }
+
+    .spacer {
+      height: 100px;
+    }
+
+    @media (max-width: 768px) {
+      .skills-title {
+        font-size: 36px;
+      }
+      .skills-container {
+        font-size: 16px;
+        margin-left: 50px;
+      }
+      .skill-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="skills-title">My Skills</h1>
+
+<div class="skills-container">
+  <!-- Left column -->
+  <div class="skill">CSS: <span class="stars">★★★★☆</span></div>
+  <!-- Right column -->
+  <div class="skill">Figma: <span class="stars">★★★★★</span></div>
+
+  <div class="skill">BootStrap: <span class="stars">★★★☆☆</span></div>
+  <div class="skill">Tailwind: <span class="stars">★★★★★</span></div>
+
+  <div class="skill">JavaScript: <span class="stars">★★★★☆</span></div>
+  <div class="skill">node.js: <span class="stars">★★★☆☆</span></div>
+
+  <div class="skill">React: <span class="stars">★★★★☆</span></div>
+  <div class="skill">node.js: <span class="stars">★★★★★</span></div>
+</div>
+
+
+</body>
+</html>
